@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<template id="__bundler_thumbnail"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><rect width="200" height="200" fill="#0f1f3a"/><text x="40" y="118" font-family="sans-serif" font-size="60" fill="#fff">WR</text></svg></template>
+
+<helmet>
+  <link rel="icon" type="image/avif" href="./assets/wayzata-roofing-logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&amp;family=Barlow+Condensed:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+  <style>
+    html { scroll-behavior: smooth; }
+    body { margin:0; background:#ffffff; -webkit-font-smoothing:antialiased; }
+    a { color:inherit; text-decoration:none; }
+    a:hover { color:#e8a020; }
+    .pg-cta { position:relative; display:inline-flex; align-items:center; justify-content:center; border:none; border-radius:360px; color:#0f1f3a; background:#e8a020; overflow:hidden; cursor:pointer; isolation:isolate; box-shadow:0 8px 22px -6px rgba(232,160,32,.6); transition:transform .2s ease, box-shadow .2s ease; }
+    .pg-cta span { position:relative; z-index:1; }
+    .pg-cta::after { content:''; position:absolute; inset:0; z-index:0; background:linear-gradient(115deg, transparent 20%, rgba(255,255,255,.5) 50%, transparent 80%); transform:translateX(-120%); animation:pgShine 3.2s ease-in-out infinite; pointer-events:none; }
+    .pg-cta:hover { color:#0f1f3a; transform:translateY(-2px); box-shadow:0 13px 30px -6px rgba(232,160,32,.72); }
+    @keyframes pgShine { 0% { transform:translateX(-120%); } 55%,100% { transform:translateX(120%); } }
+    .wc-tile { background:#ffffff; border:1px solid #d9d9dc; border-radius:14px; padding:26px 24px; transition:transform .35s ease, border-color .3s ease, box-shadow .35s ease; }
+    .wc-tile:hover { transform:translateY(-5px); border-color:#e8a020; box-shadow:0 22px 44px -22px rgba(15,31,58,.4); }
+    .wc-reason { position:relative; overflow:hidden; border:1px solid rgba(255,255,255,.18); border-radius:14px; padding:28px 24px; transition:border-color .3s ease, background .3s ease; }
+    .wc-reason:hover { border-color:#e8a020; background:rgba(232,160,32,.07); }
+    .wc-reason-more { max-height:0; opacity:0; overflow:hidden; transition:max-height .45s ease, opacity .35s ease, margin-top .45s ease; margin-top:0; }
+    .wc-reason:hover .wc-reason-more, .wc-reason:focus-within .wc-reason-more { max-height:220px; opacity:1; margin-top:12px; }
+    .hx-proc-title { color:#b0b3b8; transition:color .5s ease; }
+    .hx-proc-title.is-active { color:#0f1f3a; }
+    @keyframes hxFade { from { opacity:0; } to { opacity:1; } }
+    @keyframes hxGrowV { from { height:0; } to { height:100%; } }
+    .hx-faq-plus { transition:transform .3s ease; }
+    .hx-faq-plus.is-open { transform:rotate(45deg); }
+    .hx-faq-body { max-height:0; opacity:0; overflow:hidden; transition:max-height .4s ease,opacity .35s ease; }
+    .hx-faq-body.is-open { max-height:340px; opacity:1; }
+    @media (prefers-reduced-motion: reduce) { .wc-tile, .wc-reason, .wc-reason-more { transition:none !important; } .pg-cta::after { animation:none; } }
+  </style>
+</helmet>
+
+<div style="font-family:'Barlow',sans-serif;color:#0f1f3a;background:#ffffff">
+
+  <dc-import name="Site Nav" current="why" hint-size="100%,96px"></dc-import>
+
+  <header data-screen-label="Hero" style="position:relative;overflow:hidden;background:#0f1f3a;padding:clamp(114px,16vw,170px) 20px clamp(56px,8vw,86px)">
+    <img src="./assets/svc-residential-roofing.png" alt="A completed Wayzata Roofing project" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.34">
+    <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,31,58,.86),rgba(15,31,58,.72) 50%,rgba(15,31,58,.94))"></div>
+    <div style="position:relative;max-width:1180px;margin:0 auto">
+      <p style="margin:0 0 14px;font:600 12px/1.4 'Barlow',sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#e8a020">Why Homeowners Around Lake Minnetonka Choose Us</p>
+      <h1 style="margin:0;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(40px,5vw,68px);line-height:1.04;letter-spacing:-.02em;color:#ffffff;max-width:900px;text-transform:uppercase">Anyone Can Sell You A Roof. Fewer Will Stand Behind One.</h1>
+      <p style="margin:20px 0 0;font:400 17.5px/1.65 'Barlow',sans-serif;color:rgba(255,255,255,.82);max-width:640px;text-wrap:pretty">Choosing the contractor is the hard part, not choosing the shingle. Here is exactly what you get with us, in writing, before you commit to anything.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:14px;margin:34px 0 0">
+        <a href="free-quote.dc.html" class="pg-cta" style="font:700 15px/1.2 'Barlow',sans-serif;padding:17px 32px"><span>Free Instant Estimate</span></a>
+        <a href="tel:9527776356" style-hover="background:rgba(255,255,255,.14)" style="display:inline-flex;align-items:center;gap:9px;font:600 15px/1 'Barlow',sans-serif;color:#fff;border:1px solid rgba(255,255,255,.45);padding:16px 30px;border-radius:99px;cursor:pointer;transition:background .25s ease">
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:0 0 auto"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>952-777-6356
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <section data-screen-label="Credibility" style="background:#f2f2f3;padding:clamp(52px,8vw,92px) 20px">
+    <div style="max-width:1180px;margin:0 auto">
+      <div style="max-width:660px;margin-bottom:40px">
+        <p style="margin:0 0 16px;font:600 11.5px/1 'Barlow',sans-serif;letter-spacing:.28em;text-transform:uppercase;color:#b87c14;display:inline-block;width:fit-content;max-width:100%;padding:8px 15px;border-radius:99px;background:#ffffff;border:1px solid #d9d9dc">What You Get, In Writing</p>
+        <h2 style="margin:0;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(30px,3.4vw,42px);line-height:1.1;color:#0f1f3a;text-transform:uppercase">Every promise on this page is documented</h2>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px">
+
+        <div class="wc-tile">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#e8a020" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:block;margin-bottom:16px"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path><path d="m9 12 2 2 4-4"></path></svg>
+          <h3 style="margin:0 0 8px;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:21px;line-height:1.2;color:#0f1f3a;text-transform:uppercase">Written Workmanship Warranty</h3>
+          <p style="margin:0;font:400 15px/1.65 'Barlow',sans-serif;color:#54585f;text-wrap:pretty">Our own labour warranty on every install, on paper, on top of whatever the manufacturer covers. One number to call if anything moves.</p>
+        </div>
+
+        <div class="wc-tile">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#e8a020" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:block;margin-bottom:16px"><circle cx="12" cy="8" r="6"></circle><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"></path></svg>
+          <h3 style="margin:0 0 8px;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:21px;line-height:1.2;color:#0f1f3a;text-transform:uppercase">Manufacturer-Backed Products</h3>
+          <p style="margin:0;font:400 15px/1.65 'Barlow',sans-serif;color:#54585f;text-wrap:pretty">We install well-regarded systems that carry real manufacturer warranties, not whatever is cheapest to put on that week.</p>
+          <p style="margin:14px 0 0;font:600 10.5px/1.4 'Barlow',sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#8a8f97">[REPLACE: manufacturer certification logos — GAF, James Hardie, Andersen, etc.]</p>
+        </div>
+
+        <div class="wc-tile">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#e8a020" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:block;margin-bottom:16px"><rect x="2" y="5" width="20" height="14" rx="2"></rect><path d="M2 10h20"></path></svg>
+          <h3 style="margin:0 0 8px;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:21px;line-height:1.2;color:#0f1f3a;text-transform:uppercase">Financing Available</h3>
+          <p style="margin:0;font:400 15px/1.65 'Barlow',sans-serif;color:#54585f;text-wrap:pretty">Monthly payment options so the right work happens now, with the terms written out before you sign anything. No deposit to book a date.</p>
+        </div>
+
+        <a href="free-quote.dc.html" class="wc-tile" style="display:block;color:#0f1f3a">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#e8a020" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:block;margin-bottom:16px"><path d="M12 2v20"></path><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+          <h3 style="margin:0 0 8px;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:21px;line-height:1.2;color:#0f1f3a;text-transform:uppercase">Instant Price Estimate</h3>
+          <p style="margin:0 0 14px;font:400 15px/1.65 'Barlow',sans-serif;color:#54585f;text-wrap:pretty">Get a realistic range in under a minute. No phone number, no sales call, no appointment to sit through.</p>
+          <span style="display:inline-flex;align-items:center;gap:8px;font:700 11px/1 'Barlow',sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#b87c14">Try The Estimator →</span>
+        </a>
+
+        <div class="wc-tile">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#e8a020" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:block;margin-bottom:16px"><path d="M12 2v4"></path><path d="M4.5 7.5 12 11l7.5-3.5"></path><path d="M2.5 6.5 12 2l9.5 4.5v11L12 22l-9.5-4.5z"></path><path d="M12 11v11"></path></svg>
+          <h3 style="margin:0 0 8px;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:21px;line-height:1.2;color:#0f1f3a;text-transform:uppercase">Years On Minnesota Roofs</h3>
+          <p style="margin:0 0 14px;font:400 15px/1.65 'Barlow',sans-serif;color:#54585f;text-wrap:pretty">A new company name, not new hands. The crew has spent years on exteriors across the west metro, and we will hand you addresses and references from that work before you commit.</p>
+          <a href="Our Work.dc.html" style="display:inline-flex;align-items:center;gap:8px;font:700 11px/1 'Barlow',sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#b87c14">See Completed Projects →</a>
+        </div>
+
+        <div class="wc-tile">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#e8a020" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:block;margin-bottom:16px"><path d="M3 21h18"></path><path d="M5 21V8l7-5 7 5v13"></path><path d="M10 21v-6h4v6"></path></svg>
+          <h3 style="margin:0 0 8px;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:21px;line-height:1.2;color:#0f1f3a;text-transform:uppercase">Licensed, Insured &amp; Local</h3>
+          <p style="margin:0;font:400 15px/1.65 'Barlow',sans-serif;color:#54585f;text-wrap:pretty">Licensed and insured in Minnesota, based here year-round. We will still be answering the phone the winter after your job.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section data-screen-label="Testimonials" style="background:#ffffff;padding:clamp(52px,8vw,92px) 20px">
+    <div style="max-width:1180px;margin:0 auto">
+      <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:18px;margin-bottom:36px">
+        <div style="max-width:640px">
+          <p style="margin:0 0 16px;font:600 11.5px/1 'Barlow',sans-serif;letter-spacing:.28em;text-transform:uppercase;color:#b87c14;display:inline-block;width:fit-content;max-width:100%;padding:8px 15px;border-radius:99px;background:#f2f2f3;border:1px solid #d9d9dc">In Their Words</p>
+          <h2 style="margin:0;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(28px,3.2vw,40px);line-height:1.1;color:#0f1f3a;text-transform:uppercase">What that looks like on a real job</h2>
+        </div>
+        <a href="https://www.google.com/search?q=Wayzata+Roofing+reviews" style="display:inline-flex;align-items:center;gap:8px;font:700 11px/1 'Barlow',sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#b87c14;border-bottom:2px solid #e8a020;padding-bottom:4px">Read All Reviews On Google →</a>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:20px">
+        <sc-for list="{{testimonials}}" as="t" hint-placeholder-count="6">
+          <div style="background:#ffffff;border:1px solid #d9d9dc;border-radius:14px;padding:26px 24px;display:flex;flex-direction:column;gap:14px">
+            <div style="font-size:13px;letter-spacing:3px;color:#e8a020">★★★★★</div>
+            <p style="margin:0;font:400 15.5px/1.7 'Barlow',sans-serif;color:#54585f;text-wrap:pretty">{{t.text}}</p>
+            <div style="display:flex;align-items:center;gap:12px;margin-top:auto;padding-top:14px;border-top:1px solid #e6e6e8">
+              <span style="flex:0 0 auto;width:38px;height:38px;border-radius:50%;background:#0f1f3a;color:#e8a020;display:inline-flex;align-items:center;justify-content:center;font:700 15px/1 'Barlow',sans-serif">{{t.i}}</span>
+              <span style="display:flex;flex-direction:column;gap:3px">
+                <span style="font:700 14px/1.2 'Barlow',sans-serif;color:#0f1f3a">{{t.name}}</span>
+                <span style="font:600 10.5px/1.3 'Barlow',sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#8a8f97">{{t.role}}</span>
+              </span>
+              <svg viewBox="0 0 48 48" width="15" height="15" aria-hidden="true" style="flex:0 0 auto;margin-left:auto"><path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z"></path><path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z"></path><path fill="#FBBC05" d="M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24s.85 6.91 2.34 9.88l7.35-5.7z"></path><path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z"></path></svg>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <section data-screen-label="Reasons" style="background:#0f1f3a;padding:clamp(52px,8vw,92px) 20px">
+    <div style="max-width:1180px;margin:0 auto">
+      <div style="max-width:660px;margin-bottom:42px">
+        <p style="margin:0 0 16px;font:600 11.5px/1 'Barlow',sans-serif;letter-spacing:.28em;text-transform:uppercase;color:#e8a020">Six Reasons</p>
+        <h2 style="margin:0;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(28px,3.2vw,40px);line-height:1.1;color:#ffffff;text-transform:uppercase">The things that actually change your experience</h2>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px">
+        <sc-for list="{{reasons}}" as="r" hint-placeholder-count="6">
+          <div class="wc-reason" tabindex="0">
+            <span style="display:block;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:32px;line-height:1;color:#e8a020;margin-bottom:14px">{{r.n}}</span>
+            <h3 style="margin:0;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:21px;line-height:1.2;color:#ffffff;text-transform:uppercase">{{r.t}}</h3>
+            <p style="margin:10px 0 0;font:400 15px/1.65 'Barlow',sans-serif;color:rgba(255,255,255,.74);text-wrap:pretty">{{r.d}}</p>
+            <p class="wc-reason-more" style="margin:0;font:400 14.5px/1.65 'Barlow',sans-serif;color:#e8a020;text-wrap:pretty">{{r.more}}</p>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <section data-screen-label="Comparison" style="background:#ffffff;padding:clamp(56px,9vw,104px) 20px">
+    <div style="max-width:900px;margin:0 auto">
+      <div style="text-align:center;max-width:640px;margin:0 auto 44px">
+        <p style="margin:0 0 18px;font:600 11.5px/1 'Barlow',sans-serif;letter-spacing:.28em;text-transform:uppercase;color:#b87c14;display:inline-block;width:fit-content;max-width:100%;padding:8px 15px;border-radius:99px;background:#f2f2f3;border:1px solid #d9d9dc">Us vs. The Rest</p>
+        <h2 style="margin:0;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(30px,3.4vw,42px);line-height:1.14;color:#0f1f3a">The difference, <em style="font-style:normal;font-weight:800">line by line</em></h2>
+      </div>
+      <div style="border:1px solid #d9d9dc;border-radius:14px;overflow:hidden;background:#fff">
+        <div style="display:grid;grid-template-columns:1fr 1fr">
+          <div style="background:#0f1f3a;padding:20px 26px;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:19px;color:#fff">Wayzata Roofing &amp; Exteriors</div>
+          <div style="background:#f2f2f3;padding:20px 26px;font:600 15px/1.4 'Barlow',sans-serif;color:#54585f;display:flex;align-items:center">The Typical Roofer</div>
+        </div>
+        <sc-for list="{{compare}}" as="c" hint-placeholder-count="10">
+          <div style="display:grid;grid-template-columns:1fr 1fr;border-top:1px solid #d9d9dc">
+            <div style="padding:18px 26px;display:flex;gap:12px;align-items:baseline;font:600 14.5px/1.55 'Barlow',sans-serif;color:#0f1f3a;border-right:1px solid #d9d9dc"><span style="color:#b87c14;font-weight:800">✓</span><span>{{c.r}}</span></div>
+            <div style="padding:18px 26px;display:flex;gap:12px;align-items:baseline;font:400 14.5px/1.55 'Barlow',sans-serif;color:#8c9098"><span style="color:#c4c4c8">✗</span><span>{{c.x}}</span></div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <section data-screen-label="One percent" style="background:#f2f2f3;padding:clamp(52px,8vw,92px) 20px">
+    <div style="max-width:1180px;margin:0 auto;background:#0f1f3a;border-radius:20px;padding:clamp(32px,6vw,58px);display:flex;flex-wrap:wrap;gap:32px 60px;align-items:center">
+      <div style="flex:0 0 auto;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(80px,12vw,150px);line-height:.9;color:#e8a020">1%</div>
+      <div style="flex:1 1 420px;min-width:280px">
+        <p style="margin:0 0 14px;font:600 11.5px/1 'Barlow',sans-serif;letter-spacing:.28em;text-transform:uppercase;color:#e8a020">Community First</p>
+        <h2 style="margin:0 0 16px;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(26px,3.2vw,38px);line-height:1.1;color:#ffffff;text-transform:uppercase">Every project gives 1% back, and you pick where it goes</h2>
+        <p style="margin:0;font:400 16.5px/1.7 'Barlow',sans-serif;color:rgba(255,255,255,.8);max-width:620px;text-wrap:pretty">For every job we complete, we donate 1% to a local association of your choice: a youth sports team, a school program, a neighbourhood cause. Same price to you, and the money stays in the community that hired us.</p>
+      </div>
+    </div>
+  </section>
+
+  <section data-screen-label="Process" style="background:#ffffff;padding:clamp(56px,9vw,104px) 20px">
+    <div style="max-width:1180px;margin:0 auto">
+      <div style="max-width:640px;margin-bottom:48px">
+        <p style="margin:0 0 18px;font:600 11.5px/1 'Barlow',sans-serif;letter-spacing:.28em;text-transform:uppercase;color:#b87c14;display:inline-block;width:fit-content;max-width:100%;padding:8px 15px;border-radius:99px;background:#f2f2f3;border:1px solid #d9d9dc">How We Work</p>
+        <h2 style="margin:0;font-family:'Barlow Condensed',-apple-system,BlinkMacSystemFont,sans-serif;font-weight:800;font-size:clamp(30px,3.4vw,42px);line-height:1.14;color:#0f1f3a">Five steps, no <em style="font-style:normal;font-weight:800">surprises</em></h2>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;gap:48px;align-items:flex-start">
+        <div style="flex:1 1 380px;min-width:300px;display:flex;flex-direction:column">
+          <sc-for list="{{steps}}" as="s" hint-placeholder-count="5">
+            <button onClick="{{procSet}}" data-idx="{{s.idx}}" style="position:relative;display:flex;align-items:flex-start;gap:16px;padding:26px 0 26px 22px;text-align:left;background:none;border:none;border-top:1px solid {{s.rule}};cursor:pointer;width:100%">
+              <span style="position:absolute;left:0;top:0;bottom:0;width:2px;background:#e4e4e7">
+                <sc-if value="{{s.on}}" hint-placeholder-val="{{ false }}"><span data-anim="1" style="position:absolute;top:0;left:0;width:100%;display:block;background:#b87c14;animation:hxGrowV .5s ease both"></span></sc-if>
+              </span>
+              <span style="font:500 10px/1 'Barlow',sans-serif;color:#8c9098;margin-top:10px">/{{s.n}}</span>
+              <span style="display:flex;flex-direction:column;gap:8px;flex:1">
+                <span style="font-family:'Barlow Condensed',-apple-system,BlinkMacSystemFont,sans-serif;font-weight:700;font-size:clamp(22px,2.6vw,30px);line-height:1.15" class="hx-proc-title {{s.cls}}">{{s.t}}</span>
+                <sc-if value="{{s.on}}" hint-placeholder-val="{{ false }}"><span data-anim="1" style="font:400 14.5px/1.65 'Barlow',sans-serif;color:#54585f;max-width:380px;animation:hxFade .35s ease both">{{s.d}}</span></sc-if>
+              </span>
+            </button>
+          </sc-for>
+        </div>
+        <div style="flex:1 1 480px;min-width:300px">
+          <div style="position:relative;aspect-ratio:16/11;border-radius:32px;overflow:hidden;border:1px solid #d9d9dc;background:#f2f2f3">
+            <sc-for list="{{stepImgs}}" as="si" hint-placeholder-count="1">
+              <sc-if value="{{si.on}}" hint-placeholder-val="{{ false }}">
+                <img data-anim="1" src="{{si.src}}" alt="Wayzata Roofing crew at work" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;animation:hxFade .5s ease both">
+              </sc-if>
+            </sc-for>
+          </div>
+          <a href="Process.dc.html" style="display:inline-flex;align-items:center;gap:8px;margin-top:26px;font:700 11px/1 'Barlow',sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#b87c14;border-bottom:2px solid #e8a020;padding-bottom:4px">See The Full Process →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section data-screen-label="FAQ" style="background:#f2f2f3;padding:clamp(56px,9vw,104px) 20px">
+    <div style="max-width:1180px;margin:0 auto;display:flex;flex-wrap:wrap;gap:48px 64px;align-items:flex-start">
+      <div style="flex:1 1 360px;min-width:280px">
+        <p style="margin:0 0 18px;font:600 11.5px/1 'Barlow',sans-serif;letter-spacing:.28em;text-transform:uppercase;color:#b87c14;display:inline-block;width:fit-content;max-width:100%;padding:8px 15px;border-radius:99px;background:#f2f2f3;border:1px solid #d9d9dc">Common Questions</p>
+        <h2 style="margin:0 0 18px;font-family:'Barlow Condensed',-apple-system,BlinkMacSystemFont,sans-serif;font-weight:800;font-size:clamp(30px,3.4vw,42px);line-height:1.14;color:#0f1f3a">Before you hire <em style="font-style:normal;font-weight:800">anyone</em></h2>
+        <p style="margin:0;font:400 15.5px/1.65 'Barlow',sans-serif;color:#54585f;max-width:380px;text-wrap:pretty">Still wondering about something? Ask us directly, a real person, not a call center, replies within one business day.</p>
+        <img src="./assets/faq-contractor-client.png" alt="A Wayzata Roofing estimator talking with a homeowner at the front door" style="margin-top:32px;width:100%;height:auto;display:block;border-radius:14px;border:1px solid #d9d9dc">
+      </div>
+      <div style="flex:1 1 480px;min-width:300px">
+        <div style="border-bottom:1px solid #d2d2d6">
+          <sc-for list="{{faqs}}" as="faq" hint-placeholder-count="6">
+            <div style="border-top:1px solid #d2d2d6">
+              <div onClick="{{faqToggle}}" data-idx="{{faq.i}}" style="display:flex;align-items:center;justify-content:space-between;gap:22px;padding:21px 2px;cursor:pointer">
+                <span style="font-family:'Barlow Condensed',-apple-system,BlinkMacSystemFont,sans-serif;font-weight:700;font-size:18.5px;line-height:1.4;color:#0f1f3a">{{faq.q}}</span>
+                <span style="font-family:'Barlow Condensed',-apple-system,BlinkMacSystemFont,sans-serif;font-size:26px;line-height:1;color:#b87c14;flex:0 0 auto" class="hx-faq-plus {{faq.cls}}">+</span>
+              </div>
+              <div class="hx-faq-body {{faq.cls}}" style="overflow:hidden">
+                <p style="margin:0;padding:0 40px 22px 2px;font:400 15px/1.7 'Barlow',sans-serif;color:#54585f;max-width:680px;text-wrap:pretty">{{faq.a}}</p>
+              </div>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <dc-import name="Site Footer" hint-size="100%,900px"></dc-import>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { faqOpen: -1, procStep: 0 };
+
+  STEP_IMG = [
+    './assets/svc-residential-roofing.png',
+    'https://static.wixstatic.com/media/ae5a4c_73ee708d0a23490889d5a4df22cbbd1f~mv2.jpg/v1/fit/w_1600,h_1200,q_90,enc_avif,quality_auto/ae5a4c_73ee708d0a23490889d5a4df22cbbd1f~mv2.jpg',
+    './assets/svc-windows.png',
+    './assets/svc-gutters.png',
+    'https://static.wixstatic.com/media/ae5a4c_82a8565e485c467ea23b3139a40e8f9b~mv2.jpg/v1/fit/w_1600,h_1200,q_90,enc_avif,quality_auto/ae5a4c_82a8565e485c467ea23b3139a40e8f9b~mv2.jpg'
+  ];
+
+  procSet = (e) => this.setState({ procStep: Number(e.currentTarget.dataset.idx) });
+
+  TST = [
+    { i: 'S', name: 'Steve Gunderson', role: 'Roof, Siding & Garage Doors', text: 'Andy from Wayzata Roofing was awesome to work with after major hailstorm. He worked directly with our insurance company adjuster.' },
+    { i: 'L', name: 'Lacee Reynolds', role: 'Roof Replacement', text: 'Our entire roof was replaced in two days, down to ensuring there are zero nails left in our yard. The entire process was seamless.' },
+    { i: 'T', name: 'Tristen Mulvihill', role: 'Roof Inspection', text: 'Andy from Wayzata Roofing came out for a second opinion and stated that my roof did not need to be replaced.' },
+    { i: 'N', name: 'Nick Molinari', role: 'Roof, Gutters & Soffit', text: 'Andy and team crushed it! Great service and very transparent pricing, and they remained flexible with weather delays.' },
+    { i: 'C', name: 'Chris Wayland', role: 'Siding & Gutters', text: 'He fought for us to get every thing covered. Job was completed fast and looks great. We love our new siding and gutters.' },
+    { i: 'T', name: 'Tyler Dahl', role: 'Roof, Gutters & Windows', text: 'Recently had my roof, gutters, and windows replaced with Wayzata Roofing. Stephen Collins was my rep and he was great to work with.' }
+  ];
+
+  REASONS = [
+    { n: '01', t: 'Local, Not Storm Chasers', d: 'We live and work here year-round instead of following hail across the state.', more: 'Most of our work is retail, from homeowners who called us, not doors knocked after a storm.' },
+    { n: '02', t: 'An Honest Recommendation', d: 'If your roof has years left in it, we will tell you that instead of selling you a new one.', more: 'Homeowners regularly call us for a second opinion and leave without buying anything. That is the point.' },
+    { n: '03', t: 'One Rep, Start To Finish', d: 'The person who quotes your job is the person who sees it through the final walkthrough.', more: 'No handoff to a project manager you have never met halfway through the build.' },
+    { n: '04', t: 'Everything In Writing', d: 'Scope, product, price, timeline and warranty, documented before you sign.', more: 'If it is not on the estimate, you are not paying for it. No change orders that appear after tear-off.' },
+    { n: '05', t: 'Photographed Throughout', d: 'Before, during and after photos of what we found and what we did about it.', more: 'Useful for your records, your insurer and the next owner of the house.' },
+    { n: '06', t: 'A Site Left Clean', d: 'Magnetic nail sweep and a full cleanup at the end of every day, not just the last one.', more: 'The most common thing our reviews mention is that you cannot tell a crew was ever in the yard.' }
+  ];
+
+  COMPARE = [
+    { r: 'Written workmanship warranty', x: 'Verbal assurances and nothing on paper' },
+    { r: 'Honest recommendation, even if it means no sale', x: 'A replacement quoted before the roof is inspected' },
+    { r: 'Local crews, not out-of-state storm chasers', x: 'Out-of-town crews that leave when the season ends' },
+    { r: 'Same rep from estimate to final walkthrough', x: 'A salesman you never hear from again after signing' },
+    { r: 'Photo documentation before, during and after', x: 'No record of what was found or covered up' },
+    { r: 'Permits pulled and inspections scheduled', x: 'Permits left to the homeowner, or skipped entirely' },
+    { r: 'Site cleaned at the end of every day', x: 'Nails and debris left in the yard until the last day' },
+    { r: 'Financing terms written out before you sign', x: 'Financing pitched verbally, terms revealed later' },
+    { r: 'No deposit required to book a date', x: 'A deposit taken before anything is scheduled' },
+    { r: '1% of every project donated to a local cause you choose', x: 'No stake in the neighborhood beyond the job' }
+  ];
+
+  STEPS = [
+    { n: '01', t: 'Free Assessment', d: 'We inspect the property, photograph what we find and tell you what actually needs doing.' },
+    { n: '02', t: 'Written Estimate', d: 'A clear scope and price with product options laid out side by side.' },
+    { n: '03', t: 'Schedule & Order', d: 'Date booked, materials ordered, delivery confirmed with you. No deposit needed.' },
+    { n: '04', t: 'Installation', d: 'Our own crews, daily cleanup, and photos through the build.' },
+    { n: '05', t: 'Walkthrough', d: 'Final inspection together, then your warranty documents in writing.' }
+  ];
+
+  FAQ = [
+    { q: 'Are you licensed and insured?', a: 'Yes. Wayzata Roofing is licensed and insured in Minnesota, and we are happy to send the certificates before you sign anything.' },
+    { q: 'What if something goes wrong in two years?', a: 'You call us and we come back. Our workmanship warranty is in writing and we are a local company that intends to still be here.' },
+    { q: 'Do you subcontract the work?', a: 'The crews on your property work to our standard and answer to your rep. You always have one point of accountability, not a chain of them.' },
+    { q: 'Why are you not the cheapest bid?', a: 'The cheapest bid usually leaves something out: ice and water shield, flashing, permits, cleanup, or a real warranty. Our estimates spell out what is included so you can compare properly.' },
+    { q: 'Do you handle insurance and storm claims?', a: 'We can help when a claim is involved, but we are not storm chasers. Most of our work is retail, for homeowners who want the job done right.' },
+    { q: 'What areas do you serve?', a: 'Wayzata, Minnetonka, Plymouth, Excelsior, Orono, Deephaven and the rest of the Lake Minnetonka area, for residential, commercial and multi-family properties.' }
+  ];
+
+  componentDidMount() {
+    document.title = 'Why Choose Us | Wayzata Roofing';
+  }
+
+  faqToggle = (e) => {
+    const i = Number(e.currentTarget.dataset.idx);
+    this.setState((s) => ({ faqOpen: s.faqOpen === i ? -1 : i }));
+  };
+
+  renderVals() {
+    return {
+      testimonials: this.TST,
+      reasons: this.REASONS,
+      compare: this.COMPARE,
+      steps: this.STEPS.map((s, i) => ({
+        idx: i, n: s.n, t: s.t, d: s.d, rule: i === 0 ? 'transparent' : '#e4e4e7',
+        on: this.state.procStep === i,
+        cls: this.state.procStep === i ? 'is-active' : ''
+      })),
+      stepImgs: this.STEP_IMG.map((src, i) => ({ src, on: this.state.procStep === i })),
+      procSet: this.procSet,
+      faqs: this.FAQ.map((f, i) => ({
+        i, q: f.q, a: f.a, cls: this.state.faqOpen === i ? 'is-open' : ''
+      })),
+      faqToggle: this.faqToggle
+    };
+  }
+}
+</script>
+</body>
+</html>

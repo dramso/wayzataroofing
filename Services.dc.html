@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Services | Wayzata Roofing &amp; Exteriors</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<template id="__bundler_thumbnail"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><rect width="200" height="200" fill="#0f1f3a"/><text x="40" y="118" font-family="sans-serif" font-size="60" fill="#fff">WR</text></svg></template>
+
+<helmet>
+  <meta name="description" content="Roofing, siding, windows and gutters for homes and buildings across the Lake Minnetonka area, from one accountable contractor.">
+  <meta property="og:title" content="Services | Wayzata Roofing &amp; Exteriors">
+  <meta property="og:description" content="Roofing, siding, windows and gutters for homes and buildings across the Lake Minnetonka area, from one accountable contractor.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/avif" href="./assets/wayzata-roofing-logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link href="https://db.onlinewebfonts.com/c/1cd1e7d71e048159076fd90b39846902?family=Open+Sauce+One" rel="stylesheet">
+  <link href="https://db.onlinewebfonts.com/c/42acf9aa4a6dc2f2886a3f682e337ead?family=Open+Sauce+One+Bold" rel="stylesheet">
+  <style>
+    html { scroll-behavior: smooth; }
+    body { margin:0; background:#ffffff; -webkit-font-smoothing:antialiased; }
+    a { color:inherit; text-decoration:none; }
+    a:hover { color:#e8a020; }
+    input, select, button, textarea { font-family:'Barlow', sans-serif; }
+    .sv-ov { opacity:0; transform:translateY(10px); pointer-events:none; transition:opacity .35s ease, transform .35s ease; }
+    .sv-card:hover .sv-ov { opacity:1; transform:translateY(0); pointer-events:auto; }
+    .pg-cta { position:relative; display:inline-flex; align-items:center; justify-content:center; border:none; border-radius:360px; color:#0f1f3a; background:#e8a020; overflow:hidden; cursor:pointer; isolation:isolate; box-shadow:0 8px 22px -6px rgba(232,160,32,.6); transition:transform .2s ease, box-shadow .2s ease; }
+    .pg-cta span { position:relative; z-index:1; }
+    .pg-cta::after { content:''; position:absolute; inset:0; z-index:0; background:linear-gradient(115deg, transparent 20%, rgba(255,255,255,.78) 50%, transparent 80%); transform:translateX(-120%); animation:pgShine 3.2s ease-in-out infinite; pointer-events:none; }
+    .pg-cta:hover { color:#0f1f3a; transform:translateY(-2px); box-shadow:0 13px 30px -6px rgba(232,160,32,.72); }
+    @keyframes pgShine { 0% { transform:translateX(-120%); } 55%,100% { transform:translateX(120%); } }
+    @media (prefers-reduced-motion: reduce) { .pg-cta::after { animation:none; } }
+  </style>
+</helmet>
+
+<div style="font-family:'Barlow',sans-serif;color:#0f1f3a;background:#ffffff">
+
+  <dc-import name="Site Nav" current="services" hint-size="100%,96px"></dc-import>
+
+  <header data-screen-label="Services hero" style="position:relative;overflow:hidden;background:#0f1f3a;padding:clamp(118px,17vw,184px) 20px clamp(54px,8vw,88px)">
+    <div style="position:absolute;inset:0;background:radial-gradient(ellipse at 78% 12%,rgba(232,160,32,.16),transparent 58%)"></div>
+    <div style="position:relative;max-width:1180px;margin:0 auto">
+      <p style="margin:0 0 18px;font:600 11.5px/1 'Barlow',sans-serif;letter-spacing:.28em;text-transform:uppercase;color:#ffffff;display:inline-block;align-self:flex-start;width:fit-content;max-width:100%;padding:8px 16px;border-radius:99px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.28);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)">Services</p>
+      <h1 style="margin:0;font-family:'Barlow Condensed',-apple-system,BlinkMacSystemFont,sans-serif;font-weight:800;font-size:clamp(38px,4.8vw,64px);line-height:1.08;letter-spacing:-.015em;color:#ffffff;max-width:820px">Everything above the <em style="font-style:normal;font-weight:800;color:#e8a020">gutters</em></h1>
+      <p style="margin:24px 0 0;font:400 17.5px/1.65 'Barlow',sans-serif;color:rgba(255,255,255,.82);max-width:620px;text-wrap:pretty">Every engagement begins the same way: a complimentary inspection, written findings within 48 hours, and a fixed proposal, never a number on a business card.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:14px;margin-top:36px">
+        <a href="Contact.dc.html" class="pg-cta" style="font:700 15px/1.2 'Barlow',sans-serif;padding:17px 32px"><span>Get an Instant Quote</span></a>
+        <a href="Our Work.dc.html" style-hover="background:rgba(255,255,255,.14)" style="font:600 15px/1 'Barlow',sans-serif;color:#fff;border:1px solid rgba(255,255,255,.45);padding:16px 30px;border-radius:99px;cursor:pointer;transition:background .25s ease">See Our Work</a>
+      </div>
+    </div>
+  </header>
+
+  <section data-screen-label="Services grid" style="background:#f2f2f3;padding:clamp(56px,9vw,104px) 20px">
+    <div style="max-width:1180px;margin:0 auto">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:26px">
+        <sc-for list="{{services}}" as="svc" hint-placeholder-count="10">
+          <a href="{{svc.href}}" class="sv-card" style="position:relative;display:block;background:#fff;border:1px solid #d9d9dc;border-radius:14px;overflow:hidden;color:#0f1f3a">
+            <img src="{{svc.img}}" alt="{{svc.t}}" style="display:block;width:100%;height:190px;object-fit:cover">
+            <div style="padding:22px 24px 26px">
+              <h2 style="margin:0 0 8px;font-family:'Barlow Condensed',-apple-system,BlinkMacSystemFont,sans-serif;font-weight:700;font-size:22px;line-height:1.25;color:#0f1f3a">{{svc.t}}</h2>
+              <p style="margin:0;font:400 14.5px/1.6 'Barlow',sans-serif;color:#54585f">{{svc.line}}</p>
+            </div>
+            <div class="sv-ov" style="position:absolute;inset:0;background:rgba(23,25,28,.94);padding:28px;display:flex;flex-direction:column;justify-content:flex-end;gap:12px">
+              <h3 style="margin:0;font-family:'Barlow Condensed',-apple-system,BlinkMacSystemFont,sans-serif;font-weight:700;font-size:22px;line-height:1.25;color:#fff">{{svc.t}}</h3>
+              <p style="margin:0;font:400 14px/1.65 'Barlow',sans-serif;color:rgba(255,255,255,.8)">{{svc.d}}</p>
+              <span style="font:700 11.5px/1 'Barlow',sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#ffffff">Learn More →</span>
+            </div>
+          </a>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <section data-screen-label="Why us comparison" style="padding:clamp(56px,9vw,104px) 20px">
+    <div style="max-width:900px;margin:0 auto">
+      <div style="text-align:center;max-width:640px;margin:0 auto 44px">
+        <p style="margin:0 0 18px;font:600 11.5px/1 'Barlow',sans-serif;letter-spacing:.28em;text-transform:uppercase;color:#b87c14;display:inline-block;align-self:flex-start;width:fit-content;max-width:100%;padding:8px 15px;border-radius:99px;background:#f2f2f3;border:1px solid #d9d9dc">Why Us</p>
+        <h2 style="margin:0;font-family:'Barlow Condensed',-apple-system,BlinkMacSystemFont,sans-serif;font-weight:800;font-size:clamp(30px,3.4vw,42px);line-height:1.14;color:#0f1f3a">The difference, <em style="font-style:normal;font-weight:800">itemized</em></h2>
+      </div>
+      <div style="border:1px solid #d9d9dc;border-radius:14px;overflow:hidden;background:#fff">
+        <div style="display:grid;grid-template-columns:1fr 1fr">
+          <div style="background:#0f1f3a;padding:20px 26px;font-family:'Barlow Condensed',-apple-system,BlinkMacSystemFont,sans-serif;font-weight:700;font-size:19px;color:#fff">Wayzata Roofing &amp; Exteriors</div>
+          <div style="background:#f2f2f3;padding:20px 26px;font:600 15px/1.4 'Barlow',sans-serif;color:#54585f;display:flex;align-items:center">The Typical Roofer</div>
+        </div>
+        <sc-for list="{{rows}}" as="r" hint-placeholder-count="5">
+          <div style="display:grid;grid-template-columns:1fr 1fr;border-top:1px solid #d9d9dc">
+            <div style="padding:18px 26px;display:flex;gap:12px;align-items:baseline;font:600 14.5px/1.55 'Barlow',sans-serif;color:#0f1f3a;border-right:1px solid #d9d9dc"><span style="color:#b87c14;font-weight:800">✓</span><span>{{r.us}}</span></div>
+            <div style="padding:18px 26px;display:flex;gap:12px;align-items:baseline;font:400 14.5px/1.55 'Barlow',sans-serif;color:#8c9098"><span style="color:#c4c4c8">✗</span><span>{{r.them}}</span></div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <dc-import name="Site Footer" hint-size="100%,900px"></dc-import>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  SVC = [
+    { img: './assets/svc-residential-roofing.png', t: 'Residential & Commercial Roofing', line: 'Full replacements and repairs, done right the first time.', d: 'Asphalt, cedar, metal and flat roof systems for homes and businesses. We put people and community first: honest recommendations, quality products, and dependable workmanship on every roof.' },
+    { img: 'https://static.wixstatic.com/media/ae5a4c_73ee708d0a23490889d5a4df22cbbd1f~mv2.jpg/v1/fit/w_1600,h_1200,q_90,enc_avif,quality_auto/ae5a4c_73ee708d0a23490889d5a4df22cbbd1f~mv2.jpg', t: 'Siding', line: 'Steel, vinyl, cement and engineered wood.', d: 'Full siding replacement and repair, matched to your home and installed by a crew that treats every property like it belongs to a neighbor.' },
+    { img: './assets/svc-windows.png', t: 'Windows', line: 'Vinyl, clad and wood replacements.', d: 'Window replacement that seals properly and holds its performance, installed and documented by our own crew from order to final trim.' },
+    { img: './assets/svc-gutters.png', t: 'Gutters', line: 'Seamless and copper, with covers.', d: 'Seamless gutters, copper work, downspouts and gutter covers sized to your roofline and routed away from the foundation.' },
+    { img: 'https://static.wixstatic.com/media/ae5a4c_f92bc83ed9b643e7b7645bd55f35c76e~mv2.jpg/v1/fit/w_1600,h_1200,q_90,enc_avif,quality_auto/ae5a4c_f92bc83ed9b643e7b7645bd55f35c76e~mv2.jpg', t: 'Decks', line: 'New builds and rebuilds.', d: 'New decks and rebuilds using quality composite and traditional wood, framed and finished to the same standard as everything else we install.' }
+  ];
+
+  ROWS = [
+    { us: 'People and community first, always', them: 'Just another job on the schedule' },
+    { us: 'Honest recommendations, not upsells', them: 'Sold whatever pads the invoice' },
+    { us: 'On time, to a written schedule', them: 'Delays and missed deadlines' },
+    { us: 'Personal service and quality products', them: 'Slow, hard-to-reach communication' },
+    { us: 'Dependable workmanship, licensed and insured', them: 'Vague, verbal promises' }
+  ];
+
+  renderVals() {
+    return {
+      services: this.SVC.map((s, i) => ({ ...s, href: ['roofing','siding','windows','gutters','decks'][i] + '.dc.html' })),
+      rows: this.ROWS
+    };
+  }
+}
+</script>
+</body>
+</html>

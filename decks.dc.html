@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Decks | Wayzata Roofing</title>
+<link rel="icon" type="image/avif" href="./assets/wayzata-roofing-logo.png">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<template id="__bundler_thumbnail"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><rect width="200" height="200" fill="#0f1f3a"/><text x="40" y="118" font-family="sans-serif" font-size="60" fill="#fff">WR</text></svg></template>
+
+<dc-import name="Service Page" slug="decks" problem-layout="{{problemLayout}}" hint-size="100%,100%"></dc-import>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;problemLayout&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;Cards&quot;,&quot;Centered Icons&quot;,&quot;Reveal Slider&quot;],&quot;default&quot;:&quot;Cards&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Sound Familiar?&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    return { problemLayout: this.props.problemLayout ?? 'Cards' };
+  }
+}
+</script>
+</body>
+</html>

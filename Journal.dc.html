@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Journal | Wayzata Roofing &amp; Exteriors</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<template id="__bundler_thumbnail"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><rect width="200" height="200" fill="#0f1f3a"/><text x="40" y="118" font-family="sans-serif" font-size="60" fill="#fff">WR</text></svg></template>
+
+<helmet>
+  <meta name="description" content="Practical reading for homeowners on roofing costs, seasonal maintenance and how storm damage insurance claims actually work.">
+  <meta property="og:title" content="Journal | Wayzata Roofing &amp; Exteriors">
+  <meta property="og:description" content="Practical reading for homeowners on roofing costs, seasonal maintenance and how storm damage insurance claims actually work.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/avif" href="./assets/wayzata-roofing-logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link href="https://db.onlinewebfonts.com/c/1cd1e7d71e048159076fd90b39846902?family=Open+Sauce+One" rel="stylesheet">
+  <link href="https://db.onlinewebfonts.com/c/42acf9aa4a6dc2f2886a3f682e337ead?family=Open+Sauce+One+Bold" rel="stylesheet">
+  <style>
+    html { scroll-behavior: smooth; }
+    body { margin:0; background:#ffffff; -webkit-font-smoothing:antialiased; }
+    a { color:inherit; text-decoration:none; }
+    a:hover { color:#e8a020; }
+    input, select, button, textarea { font-family:'Barlow', sans-serif; }
+    .jr-card img { transition:transform .6s cubic-bezier(.22,.61,.36,1); }
+    .jr-card:hover img { transform:scale(1.05); }
+  </style>
+</helmet>
+
+<div style="font-family:'Barlow',sans-serif;color:#0f1f3a;background:#ffffff">
+
+  <dc-import name="Site Nav" current="journal" hint-size="100%,96px"></dc-import>
+
+  <header data-screen-label="Journal hero" style="position:relative;overflow:hidden;background:#0f1f3a;padding:clamp(118px,17vw,184px) 20px clamp(54px,8vw,88px)">
+    <div style="position:absolute;inset:0;background:radial-gradient(ellipse at 78% 12%,rgba(232,160,32,.16),transparent 58%)"></div>
+    <div style="position:relative;max-width:1180px;margin:0 auto">
+      <p style="margin:0 0 18px;font:600 11.5px/1 'Barlow',sans-serif;letter-spacing:.28em;text-transform:uppercase;color:#ffffff;display:inline-block;align-self:flex-start;width:fit-content;max-width:100%;padding:8px 16px;border-radius:99px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.28);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)">Most Popular</p>
+      <h1 style="margin:0;font-family:'Barlow Condensed',-apple-system,BlinkMacSystemFont,sans-serif;font-weight:800;font-size:clamp(38px,4.8vw,64px);line-height:1.08;letter-spacing:-.015em;color:#ffffff;max-width:860px">Reads homeowners keep <em style="font-style:normal;font-weight:800;color:#e8a020">coming back to</em></h1>
+      <p style="margin:24px 0 0;font:400 17.5px/1.65 'Barlow',sans-serif;color:rgba(255,255,255,.82);max-width:620px;text-wrap:pretty">Pricing benchmarks, seasonal maintenance, and how storm claims actually work, written by the people who do the work.</p>
+    </div>
+  </header>
+
+  <section data-screen-label="Journal grid" style="background:#ffffff;padding:clamp(52px,8vw,96px) 20px">
+    <div style="max-width:1180px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:40px 32px">
+      <sc-for list="{{posts}}" as="p" hint-placeholder-count="3">
+        <article class="jr-card">
+          <div style="overflow:hidden;border-radius:12px;border:1px solid #d9d9dc"><img src="{{p.img}}" alt="{{p.alt}}" style="display:block;width:100%;aspect-ratio:16/10;object-fit:cover"></div>
+          <div style="display:flex;gap:14px;margin:16px 0 8px;font:700 10.5px/1 'Barlow',sans-serif;letter-spacing:.18em;text-transform:uppercase;color:#b87c14"><span>{{p.cat}}</span><span style="color:#8c9098">{{p.read}}</span></div>
+          <h2 style="margin:0 0 10px;font-family:'Barlow Condensed',-apple-system,BlinkMacSystemFont,sans-serif;font-weight:700;font-size:21px;line-height:1.3;color:#0f1f3a">{{p.title}}</h2>
+          <p style="margin:0 0 14px;font:400 14.5px/1.6 'Barlow',sans-serif;color:#54585f;text-wrap:pretty">{{p.dek}}</p>
+          <span style-hover="color:#0f1f3a" style="font:700 11.5px/1 'Barlow',sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#b87c14;cursor:pointer;transition:color .25s ease">Read More →</span>
+        </article>
+      </sc-for>
+    </div>
+  </section>
+
+  <dc-import name="Site Footer" hint-size="100%,900px"></dc-import>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  POSTS = [
+    { img: './assets/svc-residential-roofing.png', alt: 'Worn clay tiles', cat: 'Pricing', read: '6 min read', title: 'What a New Roof Really Costs in Minnesota in 2026', dek: 'A line-by-line look at where the money goes, and the benchmarks we hold every quote to.' },
+    { img: 'https://static.wixstatic.com/media/ae5a4c_82a8565e485c467ea23b3139a40e8f9b~mv2.jpg/v1/fit/w_1600,h_1200,q_90,enc_avif,quality_auto/ae5a4c_82a8565e485c467ea23b3139a40e8f9b~mv2.jpg', alt: 'Two tile materials side by side', cat: 'Maintenance', read: '5 min read', title: "7 Warning Signs Your Roof Won't Survive Another Winter", dek: 'The small tells most homeowners miss, until the first hard freeze makes them obvious.' },
+    { img: 'https://static.wixstatic.com/media/ae5a4c_f92bc83ed9b643e7b7645bd55f35c76e~mv2.jpg/v1/fit/w_1600,h_1200,q_90,enc_avif,quality_auto/ae5a4c_f92bc83ed9b643e7b7645bd55f35c76e~mv2.jpg', alt: 'Roof battens mid-installation', cat: 'Insurance', read: '8 min read', title: "Storm Claims: A Homeowner's Playbook", dek: 'How to document damage, meet the adjuster, and get the scope your policy actually owes you.' }
+  ];
+
+  renderVals() { return { posts: this.POSTS }; }
+}
+</script>
+</body>
+</html>
